@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+:root{
+    --blue: #2980b9;
+}
+
+*{
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .2s cubic-bezier(.37,1.14,.26,1.24);
+    color: #000;
+}
+*::selection{
+    background-color: #ff3300;
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+header .header-1,header .header-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    width: 100%;
+    z-index: 1000;
+}
+header .header-1 .logo{
+    font-size: 2rem;
+    counter-reset: #666;
+}
+header .header-1 .logo i{
+    margin-right: 1rem;
+    color: var(--blue);
+}
+header .header-1 .form-container form{
+    display: flex;
+    align-items: center;
+}
+header .header-1 .form-container form #search{
+    height: 4rem;
+    width: 50rem;
+    outline: none;
+    border: .2rem solid #666;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+header .header-1 .form-container form #search:hover,header .header-1 .form-container form #search:focus{
+    border-color: var(--blue);
+}
+header .header-1 .form-container form label{
+    height: 4rem;
+    width: 5rem;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: var(--blue);
+    color: #fff;
+}
+header .header-1 .form-container form label:hover{
+    background-color: yellow;
+}
+header .header-2{
+    background-color: var(--blue);
+}
+header .header-2 .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+header .header-2 .navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .header-2 .navbar ul li{
+    margin: 0 1rem;
+}
+header .header-2 .navbar ul li a{
+    font-size: 2rem;
+}
+header .header-2 .navbar ul li a:hover,header .header-2 .navbar ul li a.active{
+    color: yellow;
+}
+header .header-2 .icons{
+    display: flex;
+}
+header .header-2 .icons a{
+    color: #fff;
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+header .header-2 .icons a:hover{
+    color: yellow;
+}
+header .header-2 #menu{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+header .header-2.header-active{
+    position: fixed;
+    top: 0;left: 0;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,0.3);
+}
+body{height: 400vh;}
+
+
+
+
+
+
+
+
+
+/* midia queries */
+@media (max-width:768px) {
+    html{
+        font-size: 55%;
+    }
+    header .header-1 .form-container form #search{
+        width: 100%;
+    }
+    header .header-2 #menu{
+        display: block;
+    }
+    header .header-2 .navbar {
+        position: fixed;
+        top: -200rem;left: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 0 0 0 100vh rgba(0,0,0,0.3);
+        z-index: 10000;
+        width: 27rem;
+        opacity: 0;
+    }
+    header .header-2 .navbar ul{
+        flex-flow: column;
+        background: linear-gradient(var(--blue),blueviolet);
+        border: .2rem solid #fff;
+        box-shadow: 0 .3rem .5rem #000;
+        padding: 4rem 0;
+        width: 27rem;
+    }
+    header .header-2 .navbar ul li{
+        width: 100%;
+        margin: 1rem 0;
+        text-align: center;
+    }
+    header .header-2 .navbar ul li a{
+        font-size: 2.5rem;
+        display: block;
+    }
+    .fa-times{
+        transform: rotate(180deg);
+    }
+    header .header-2 .nav-toggle{
+        top: 50%;
+        opacity: 1;
+    }
+}
+@media (max-width:400px) {
+    header .header-1{
+        flex-flow: column;
+        padding: 1rem;
+    }
+    header .header-1 .logo{
+        padding: 1.5rem;
+    }
+}
