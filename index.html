@@ -2,8 +2,14 @@
 <html lang="en">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>store</title>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <!--font awesome link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -46,10 +52,200 @@
     </header>
     <!-- header section ends -->
 
+    <!-- home section starts -->
+    <section id="home" class="home swiper-slider">
+        <div class="home-slider swiper-wrapper">
+            <div class="item swiper-slide">
+                <img src="images/images/home_img1.jpg" alt="">
+                <div class="content">
+                    <h3>heavy discounts</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus nihil architecto.</p>
+                    <a href=""><button class="btn">discover</button></a>
+                </div>
+            </div>
+            <div class="item swiper-slide">
+                <img src="images/images/home_img2.jpg" alt="">
+                <div class="content">
+                    <h3>latest gadgets</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus nihil architecto.</p>
+                    <a href=""><button class="btn">discover</button></a>
+                </div>
+            </div>
+            <div class="item swiper-slide">
+                <img src="images/images/home_img3.jpg" alt="">
+                <div class="content">
+                    <h3>trending shoes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus nihil architecto.</p>
+                    <a href=""><button class="btn">discover</button></a>
+                </div>
+            </div>
+            <div class="item swiper-slide">
+                <img src="images/images/home_img4.jpg" alt="">
+                <div class="content">
+                    <h3>flesh glocerys</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus nihil architecto.</p>
+                    <a href=""><button class="btn">discover</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <!-- home setion ends -->
 
+    <!-- arrival section starts -->
+    <section class="arrival" id="arrival">
 
+        <h1 class="heading"><span>new arrivals</span></h1>
 
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/images/arr_img1.jpg" alt="">
+                </div>
+                
+                <div class="info">
+                    <h3>product</h3>
+                    <div class="subinfo">
+                        <strong class="price">$1000/- <span>$1500/-</span></strong>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <a href="" class="fas fa-heart" style="--i:1;"></a>
+                    <a href="" class="fas fa-shopping-cart" style="--i:2;"></a>
+                    <a href="" class="fas fa-search" style="--i:3;"></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/images/arr_img2.jpg" alt="">
+                </div>
+                
+                <div class="info">
+                    <h3>product</h3>
+                    <div class="subinfo">
+                        <strong class="price">$1000/- <span>$1500/-</span></strong>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <a href="" class="fas fa-heart" style="--i:1;"></a>
+                    <a href="" class="fas fa-shopping-cart" style="--i:2;"></a>
+                    <a href="" class="fas fa-search" style="--i:3;"></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/images/arr_img3.jpg" alt="">
+                </div>
+                
+                <div class="info">
+                    <h3>product</h3>
+                    <div class="subinfo">
+                        <strong class="price">$1000/- <span>$1500/-</span></strong>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <a href="" class="fas fa-heart" style="--i:1;"></a>
+                    <a href="" class="fas fa-shopping-cart" style="--i:2;"></a>
+                    <a href="" class="fas fa-search" style="--i:3;"></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/images/arr_img4.jpg" alt="">
+                </div>
+                
+                <div class="info">
+                    <h3>product</h3>
+                    <div class="subinfo">
+                        <strong class="price">$1000/- <span>$1500/-</span></strong>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <a href="" class="fas fa-heart" style="--i:1;"></a>
+                    <a href="" class="fas fa-shopping-cart" style="--i:2;"></a>
+                    <a href="" class="fas fa-search" style="--i:3;"></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/images/arr_img5.jpg" alt="">
+                </div>
+                
+                <div class="info">
+                    <h3>product</h3>
+                    <div class="subinfo">
+                        <strong class="price">$1000/- <span>$1500/-</span></strong>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <a href="" class="fas fa-heart" style="--i:1;"></a>
+                    <a href="" class="fas fa-shopping-cart" style="--i:2;"></a>
+                    <a href="" class="fas fa-search" style="--i:3;"></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                  <img src="images/images/arr_img6.jpg" alt="">  
+                </div>
+                
+                <div class="info">
+                    <h3>product</h3>
+                    <div class="subinfo">
+                        <strong class="price">$1000/- <span>$1500/-</span></strong>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <a href="" class="fas fa-heart" style="--i:1;"></a>
+                    <a href="" class="fas fa-shopping-cart" style="--i:2;"></a>
+                    <a href="" class="fas fa-search" style="--i:3;"></a>
+                </div>
+            </div>
 
+        </div>
+    </section>
+    <!-- arrival sectio ends -->
 
 
 
@@ -57,7 +253,23 @@
     
     
 
-
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper-slider", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 
     <!--jquery cdn link-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
