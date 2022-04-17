@@ -32,7 +32,7 @@ $(document).ready(function(){
             $('.gallery .box').filter('.'+filter).show(400) ;
         } ;
 
-        $(this).addClass('active').siblings().removeClass('active') ;
+        $(this).addClass('active').siblings().removeClass('active');
     }) ;
 
 }) ;
